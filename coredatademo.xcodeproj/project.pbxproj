@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		987EB3DC2365777F00293A81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EB3DB2365777F00293A81 /* main.swift */; };
+		987EB3E42365778D00293A81 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987EB3E32365778D00293A81 /* CoreData.framework */; };
+		987EB3E7236577AD00293A81 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 987EB3E5236577AD00293A81 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		987EB3D82365777F00293A81 /* coredatademo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = coredatademo; sourceTree = BUILT_PRODUCTS_DIR; };
 		987EB3DB2365777F00293A81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		987EB3E32365778D00293A81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		987EB3E6236577AD00293A81 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987EB3E42365778D00293A81 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,7 @@
 			children = (
 				987EB3DA2365777F00293A81 /* coredatademo */,
 				987EB3D92365777F00293A81 /* Products */,
+				987EB3E22365778D00293A81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +64,17 @@
 			isa = PBXGroup;
 			children = (
 				987EB3DB2365777F00293A81 /* main.swift */,
+				987EB3E5236577AD00293A81 /* Model.xcdatamodeld */,
 			);
 			path = coredatademo;
+			sourceTree = "<group>";
+		};
+		987EB3E22365778D00293A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				987EB3E32365778D00293A81 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				987EB3DC2365777F00293A81 /* main.swift in Sources */,
+				987EB3E7236577AD00293A81 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +300,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		987EB3E5236577AD00293A81 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				987EB3E6236577AD00293A81 /* Model.xcdatamodel */,
+			);
+			currentVersion = 987EB3E6236577AD00293A81 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 987EB3D02365777F00293A81 /* Project object */;
 }
